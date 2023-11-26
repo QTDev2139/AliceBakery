@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/jquery/jquery3.7.1.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/user.css">
+    <link rel="stylesheet" href="../CSS/style-grid.css">
+    <title>AliceBakery</title>
+</head>
+<body>
+    <header>
+        <div class="container header-top">
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class="logo d-flex">
+                    <a href="./home.html"><img src="../IMG/logocake.png" alt=""></a>
+                    <a href="./home.html" class="nav-link"><h1 class="navbar-brand">AliceBakery</h1></a>
+                    
+                </div>
+                <div class="search d-flex">
+                    <input type="search" name="" id="" class="search-input" placeholder="Search...">
+                    <img src="../FONT/fontawesome-free-6.4.2-web/svgs/solid/magnifying-glass.svg" alt="">
+                </div>
+                <div class="header-left d-flex">
+                    <div class="login d-flex">
+                        <div class="d-flex justify-content-center align-items-center" style="width: 260px;">
+                            <i class="fa-solid fa-user login-img"></i>
+                            <div class="user-group d-flex">
+                                <h3 class="user" >
+                                    <a href="./login.html" class="user-login">Đăng Nhập</a> 
+                                </h3>
+                                <h3 class="user" >
+                                    <a href="./sign-up.html">Đăng Ký</a> 
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="./cart.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span class="quantity">0</span>
+                    </a>
+                    <div class="header-mobile-icon hide-on-pc-tablet">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="./home.html" class="nav-link active">TRANG CHỦ</a></li>
+                <li class="nav-item"><div class="nav-link dropdown">
+                    <div class="dropdown-toggle">SẢN PHẨM</div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="./gateaux-kem-tuoi.html">GATEAUX KEM TƯƠI</a></div>
+                        <div class="dropdown-item"><a href="./gateaux-kem-bo.html">GATEAUX KEM BƠ</a></div>
+                        <div class="dropdown-item"><a href="./gateaux-mosse.html">GATEAUX MOUSSE</a></div>
+                        <div class="dropdown-item"><a href="./banh-pho-mai.html">BÁNH PHÔ MAI</a></div>
+                        <div class="dropdown-item"><a href="./banh-khong-gluten.html">BÁNH KHÔNG GLUTEN</a></div>
+                        <div class="dropdown-item"><a href="./banh-thuan-chay.html">BÁNH THUẦN CHAY</a></div>
+                        <div class="dropdown-item"><a href="./banh-khong-hat.html">BÁNH KHÔNG HẠT</a></div>
+                        <div class="dropdown-item"><a href="./banh-pre-sliced.html">BÁNH PRE-SLICED</a></div>
+                    </div>
+                </div></li>
+                <li class="nav-item"><a href="./info.html" class="nav-link">GIỚI THIỆU</a></li>
+                <li class="nav-item"><a href="./contactUs.html" class="nav-link">LIÊN HỆ</a></li>
+                <li class="nav-item"><a href="./sitemap.html" class="nav-link">SITEMAP</a></li>
+            </ul>
+        </div>
+
+        <!-- Header mobile -->
+        <div class="header-moblile-overlay"></div>
+        <ul class="header-mobile-nav hide-on-pc-tablet">
+            <li><a href="./home.html" class="navlink-mobile"><img src="../IMG/logocake.png" alt=""></a></li>
+            <li><a href="./home.html" class="navlink-mobile">Trang Chủ</a></li>
+            <li class="dropdown-nav">
+                <div class="nav-mobile">
+                    <a href="./gateaux-kem-tuoi.html" class="navlink-mobile">Sản Phẩm</a>
+                    <div class="nav-toggle-mobile">
+                        <i class="fa-solid fa-plus active"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <ul class="nav-sublist">
+                    <li><a href="./gateaux-kem-tuoi.html">GATEAUX KEM TƯƠI</a></li>
+                    <li><a href="./gateaux-kem-bo.html">GATEAUX KEM BƠ</a></li>
+                    <li><a href="./gateaux-mosse.html">GATEAUX MOUSSE</a></li>
+                    <li><a href="./banh-so.html">BÁNH SỐ</a></li>
+                    <li><a href="./banh-mini.html">BÁNH MINI</a></li>
+                    <li><a href="./banh-pho-mai.html">BÁNH PHÔ MAI</a></li>
+                    <li><a href="./banh-khong-gluten.html">BÁNH KHÔNG GLUTEN</a></li>
+                    <li><a href="./banh-thuan-chay.html">BÁNH THUẦN CHAY</a></li>
+                    <li><a href="./banh-khong-hat.html">BÁNH KHÔNG HẠT</a></li>
+                    <li><a href="./banh-pre-sliced.html">BÁNH PRE-SLICED</a></li>
+                </ul>
+            </li>
+            <li><a href="./info.html" class="navlink-mobile">Giới Thiệu</a></li>
+            <li><a href="./login.html" class="navlink-mobile">Đăng Nhập</a></li>
+            <li><a href="./sign-up.html" class="navlink-mobile">Đăng Ký</a></li>
+
+        </ul>
+    </header>
+
+    <!-- Body -->
+    <div class="container-body">
+        <div class="breadcrumb">
+            <div class="breadcrumb-overlay"></div>
+            <div class="breadcrumb-content">
+                <div class="breadcrumb-title">
+                    <h3>TÀI KHOẢN</h3>
+                </div>
+            </div>
+        </div>
+        <div class="user">
+            <h4 class="user-title">ĐĂNG NHẬP</h4>
+            <form action="#" id="form-signUp">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="fullname" placeholder="Tên tài khoản">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                    <div class="form-message"></div>    
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-login">Đăng nhập</button>
+                </div>
+            </form>
+            <div class="user-footer">
+                <span>Bạn chưa có tài khoản?</span>
+                <a href="./sign-up.html" >Đăng ký</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../IMG/logocake.png" alt="#">
+            </div>
+            <h3>Subscribe to our newletter</h3>
+            <div class="footer-group">
+                <input type="text" placeholder="Nhập email của bạn">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Chăm sóc khách hàng</h3>
+                        <a href="#">Trung tâm trợ giúp</a>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Giới thiệu</h3>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Tuyển dụng</a>
+                        <a href="#">Điều khoản</a>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="#">Instagram</a>
+                        </div>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Danh mục</h3>
+                        <a href="#">Bánh kem tươi</a>
+                        <a href="#">Bánh Mousee</a>
+                        <a href="#">PRE-SLICED CAKES</a>
+                        <a href="#">GLUTEN FREE CAKES</a>
+                        <a href="#">ICE - CREAM</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Bản quyền thuộc về Trần Việt Quân và Ngô Hoàng Nhi</p>
+        </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+    <script src="../JS/eventHandling.js"></script>
+    <script src="../JS/slider.js"></script>
+    
+    
+</body>
+</html>

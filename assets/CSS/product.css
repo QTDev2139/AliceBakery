@@ -1,0 +1,99 @@
+.container-body {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.product-title {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--second-color);
+}
+.category {
+    background-color: #f3f3f3;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 150px;
+}
+.category-heading {
+    padding: 10px 10px;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+.category-list {
+    list-style: none;
+}
+.category-item.active {
+    background-color: #d8d8d8;
+}
+.category-item a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 0 5px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--second-color);
+    transition: all linear 0.25s;
+}
+.category-item a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Product item */
+.home-product-item {
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    height: 475px;
+    margin-bottom: 20px;
+    background-color: #f8f2e8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6b6b6;
+    transition: all linear 0.2s;
+    overflow: hidden;
+}
+.product-item__img {
+    border-bottom-left-radius: 40px;
+    overflow: hidden;
+}
+.product-item__img img{
+    display: block;
+    height: 300px;
+    width: 100%;
+    transition: all linear 0.2s;
+}
+.home-product-item:hover {
+    transition: all linear 0.2s;
+    box-shadow: 5px 5px 15px #8d8d8d;
+}
+.home-product-item:hover .product-item__img img {
+    transform: scale(1.05);
+}
+.home-product-item:hover .product-item__name {
+    filter: brightness(40%);
+}
+.product-item__name {
+    transition: all linear 0.2s;
+    height: 60px;
+    color: var(--second-color);
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.product-item__price {
+    color: var(--header-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.product-item__buy {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    text-shadow: 0 0 2px var(--black-color);
+    background-color: var(--pink-color);
+    margin-bottom: 20px;
+}

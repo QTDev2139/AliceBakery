@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/jquery/jquery3.7.1.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/product.css">    
+    <link rel="stylesheet" href="../CSS/style-grid.css">
+    <title>AliceBakery</title>
+    <style>
+        /* BODY */
+.container-body {
+    background-color: var(--bg-color);
+}
+.container-title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+}
+.container-title .container-content {
+    padding: 0 20px;
+}
+.container-title .container-icon {
+    color: red;
+}
+.container p{
+    font-size: 20px;
+}
+.container .shop img{
+    margin: 20px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-top">
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class="logo d-flex">
+                    <a href="./home.html"><img src="../IMG/logocake.png" alt=""></a>
+                    <a href="./home.html" class="nav-link"><h1 class="navbar-brand">AliceBakery</h1></a>
+                    
+                </div>
+                <div class="search d-flex">
+                    <input type="search" name="" id="" class="search-input" placeholder="Search...">
+                    <img src="../FONT/fontawesome-free-6.4.2-web/svgs/solid/magnifying-glass.svg" alt="">
+                </div>
+                <div class="header-left d-flex">
+                    <div class="login d-flex">
+                        <div class="d-flex justify-content-center align-items-center" style="width: 260px;">
+                            <i class="fa-solid fa-user login-img"></i>
+                            <div class="user-group d-flex">
+                                <h3 class="user" >
+                                    <a href="./login.html" class="user-login">Đăng Nhập</a> 
+                                </h3>
+                                <h3 class="user" >
+                                    <a href="./sign-up.html">Đăng Ký</a> 
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="./cart.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span class="quantity">0</span>
+                    </a>
+                    <div class="header-mobile-icon hide-on-pc-tablet">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="./home.html" class="nav-link ">TRANG CHỦ</a></li>
+                <li class="nav-item"><div class="nav-link  dropdown">
+                    <div class="dropdown-toggle">SẢN PHẨM</div>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item"><a href="./gateaux-kem-tuoi.html">GATEAUX KEM TƯƠI</a></div>
+                        <div class="dropdown-item"><a href="./gateaux-kem-bo.html">GATEAUX KEM BƠ</a></div>
+                        <div class="dropdown-item"><a href="./gateaux-mosse.html">GATEAUX MOUSSE</a></div>
+                        <div class="dropdown-item"><a href="./banh-pho-mai.html">BÁNH PHÔ MAI</a></div>
+                        <div class="dropdown-item"><a href="./banh-khong-gluten.html">BÁNH KHÔNG GLUTEN</a></div>
+                        <div class="dropdown-item"><a href="./banh-thuan-chay.html">BÁNH THUẦN CHAY</a></div>
+                        <div class="dropdown-item"><a href="./banh-khong-hat.html">BÁNH KHÔNG HẠT</a></div>
+                        <div class="dropdown-item"><a href="./banh-pre-sliced.html">BÁNH PRE-SLICED</a></div>
+                    </div>
+                </div></li>
+                <li class="nav-item"><a href="./info.html" class="nav-link active">GIỚI THIỆU</a></li>
+                <li class="nav-item"><a href="./contactUs.html" class="nav-link">LIÊN HỆ</a></li>
+                <li class="nav-item"><a href="./sitemap.html" class="nav-link">SITEMAP</a></li>
+            </ul>
+        </div>
+
+        <!-- Header mobile -->
+        <div class="header-moblile-overlay"></div>
+        <ul class="header-mobile-nav hide-on-pc-tablet">
+            <li><a href="./home.html" class="navlink-mobile"><img src="../IMG/logocake.png" alt=""></a></li>
+            <li><a href="./home.html" class="navlink-mobile">Trang Chủ</a></li>
+            <li class="dropdown-nav">
+                <div class="nav-mobile">
+                    <a href="./gateaux-kem-tuoi.html" class="navlink-mobile">Sản Phẩm</a>
+                    <div class="nav-toggle-mobile">
+                        <i class="fa-solid fa-plus active"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <ul class="nav-sublist">
+                    <li><a href="./gateaux-kem-tuoi.html">GATEAUX KEM TƯƠI</a></li>
+                    <li><a href="./gateaux-kem-bo.html">GATEAUX KEM BƠ</a></li>
+                    <li><a href="./gateaux-mosse.html">GATEAUX MOUSSE</a></li>
+                    <li><a href="./banh-pho-mai.html">BÁNH PHÔ MAI</a></li>
+                    <li><a href="./banh-khong-gluten.html">BÁNH KHÔNG GLUTEN</a></li>
+                    <li><a href="./banh-thuan-chay.html">BÁNH THUẦN CHAY</a></li>
+                    <li><a href="./banh-khong-hat.html">BÁNH KHÔNG HẠT</a></li>
+                    <li><a href="./banh-pre-sliced.html">BÁNH PRE-SLICED</a></li>
+                </ul>
+            </li>
+            <li><a href="./info.html" class="navlink-mobile">Giới Thiệu</a></li>
+            <li><a href="./login.html" class="navlink-mobile">Đăng Nhập</a></li>
+            <li><a href="./sign-up.html" class="navlink-mobile">Đăng Ký</a></li>
+
+        </ul>
+    </header>
+
+    <!-- Body -->
+    <div class="container-body">
+        <div class="breadcrumb">
+            <div class="breadcrumb-overlay"></div>
+            <div class="breadcrumb-content">
+                <div class="breadcrumb-title">
+                    <h3>TRANG CHỦ / <span> GIỚI THIỆU</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-title">
+                <h3 class="container-icon">───   </h3>
+                <h3 class="container-content">VỀ CHÚNG TÔI</h3>
+                <h3 class="container-icon">───   </h3>
+            </div>
+            <p>Chúng em là Trần Việt Quân và Ngô Hoàng Nhi, sinh viên khóa K17 lớp DHHTTT17B trường Đại học Công nghiệp thành phố Hồ Chí Minh. Trong thời gian học môn Hệ thống và Công nghệ Web, 
+                chúng em đã lựa chọn chủ đề 'Website bán bánh ngọt trực tuyến' cho bài tập lướn của mình. Website đã được tiến hành ngay sau khi chúng em học xong cơ bản về HTML, CSS và JS. 
+                Trong quá trình thực hiện bài tập, chúng em đã có cơ hội để thử sức với việc làm việc nhóm, triển khai ý tưởng và tự học thêm những kiến thức mới để phục vụ cho ý tưởng của mình. Chúng em xin cảm ơn cô Nguyễn Thị Hồng Lương đã giảng dạy và hướng dẫn chúng em hoàn thành bài tập lớn nói riêng và môn học nói chung. 
+                Đây sẽ là bài học bổ ích giúp cho chúng em trên chặng đường học tập và làm việc sau này. 
+            </p>
+
+            <div class="container-title">
+                <h3 class="container-icon">───   </h3>
+                <h3 class="container-content">VỀ AliceBakery</h3>
+                <h3 class="container-icon">───   </h3>
+                
+            </div>
+            <div class="row shop">   
+                <div class="col-8">
+                    <p> <b class="ps-5" >AliceBakery</b> là một cửa hàng bánh ảo được chúng mình tạo ra dựa trên sự tham khảo từ chuỗi cửa hàng <b>AnhHoaBakery</b>
+                        để thực hiện bài tập lớn môn Hệ thống và Công nghệ Web năm 2023 của IUH (Industrial University of Ho Chi Minh city).
+                        Với chủ đề là 'Website bán bánh ngọt trực tuyến', chúng mình đã tạo ra một của hàng thu nhỏ trực tuyến với chức năng chính là giúp người mua có thể lựa chọn được đa dạng các mẫu bánh
+                        tại nhà với giá cả minh bạch và tiết kiệm thời gian. Ngoài ra, website còn giúp người bán có thể quảng bá rộng rãi sản phẩm của mình rộng rãi hơn đến với khách hàng cũng như
+                        tạo điều kiện thuận lợi cho các khách hàng ở xa không thể đến trực tiếp cửa hàng. 
+                        Các chức năng chính của website là: <br>
+                        - Đăng nhập, Đăng ký tài khoản <br>
+                        - Xem danh sách cách sản phẩm dựa trên phân loại hoặc gợi ý có sẵn. <br>
+                        - Xem chi tiết sản phẩm. <br>
+                        - Quản lý giỏ hàng. <br>
+                        - Đặt mua sản phẩm trực tuyến <br>
+                        Tuy nhiên, website vẫn còn nhiều hạn chế như chưa thể thanh toán trực tuyến, lựa chọn thời gian giao hàng...
+                        Vì đây chỉ là một website tĩnh, nên để có thể chân thực hơn các chức năng chính, bọn mình đã dùng LocalStorage để lưu trữ dữ liệu vào trình duyệt của người dùng.
+                    </p>
+                </div> 
+                <div class="col-4">
+                    <img src="../IMG/Product/kb05.webp" alt="">
+                </div>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+            
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../IMG/logocake.png" alt="#">
+            </div>
+            <h3>Subscribe to our newletter</h3>
+            <div class="footer-group">
+                <input type="text" placeholder="Nhập email của bạn">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Chăm sóc khách hàng</h3>
+                        <a href="#">Trung tâm trợ giúp</a>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Giới thiệu</h3>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Tuyển dụng</a>
+                        <a href="#">Điều khoản</a>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="#">Instagram</a>
+                        </div>
+                        <div class="footer-item-group">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="footer-item">
+                        <h3>Danh mục</h3>
+                        <a href="#">Bánh kem tươi</a>
+                        <a href="#">Bánh Mousee</a>
+                        <a href="#">PRE-SLICED CAKES</a>
+                        <a href="#">GLUTEN FREE CAKES</a>
+                        <a href="#">ICE - CREAM</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Bản quyền thuộc về Trần Việt Quân và Ngô Hoàng Nhi</p>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+.cart-title {
+    padding: 30px 10px;
+    border-bottom: 1px solid #ededed;
+}
+.img-product img {
+    width: 180px;
+    height: 180px;
+}
+
+.form-name {
+    margin: auto 0;
+    height: 100%;
+}
+.subtotal {
+    font-weight: 700;
+}
+th {
+    padding-bottom: 20px !important;
+}
+td {
+    padding: 20px 10px !important;
+}
+.total-group {
+    display: flex;
+}
+.total {
+    font-weight: 700;
+    margin: 0 5px 0 10px;
+}
+.delete {
+    cursor: pointer;
+}
+.delete:hover {
+    color: red;
+}
+#DH {
+    margin: 40px 0 0 0;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--yl-color);
+    font-weight: 500;
+    color: var(--white-color);
+}

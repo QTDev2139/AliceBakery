@@ -1,0 +1,79 @@
+/* modal
+.modal-body {
+    position: relative;
+}
+.modal-title {
+    font-weight: 700;
+    color: var(--pink-color);
+    margin: 20px 0;
+}
+.modal-content {
+    display: none;
+}
+.modal-content.active {
+    display: flex;
+}
+.modal-content .form-group {
+    width: auto;
+    margin: 0 20px 20px 20px;
+}
+.form-control:focus, .btn:focus {
+    box-shadow: none !important;
+}
+.modal-content .btn {
+    background-color: var(--pink-color);
+    font-weight: 700;
+    color: var(--bg-color);
+    border: none;
+    width: 100%;
+    box-shadow: none;
+}
+.form-group:last-child {
+    margin-bottom: 0;
+}
+.modal-content .btn:hover {
+    color: var(--white-color);
+    background-color: var(--pink-color);
+}
+.modal-bottom {
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+}
+.modal-bottom .left a {
+    color: var(--pink-color);
+    text-decoration: none;
+}
+.modal-bottom .left a:hover {
+    text-decoration: underline;
+}
+.modal-footer {
+    justify-content: center;
+}
+.modal-footer a {
+    text-decoration: none;
+    color: var(--pink-color);
+}
+.modal-footer a:hover {
+    text-decoration: underline;
+}
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 10px 3px 10px;
+    border-radius: 50%;
+    transition: all linear 0.25s;
+}
+.closeModal:hover {
+    background: #eeeeee;
+}
+.form-message {
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+}
+.form-control.invalid {
+    border: 1px solid red;
+} */
