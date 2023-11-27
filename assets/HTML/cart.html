@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="../CSS/style-grid.css">
     <title>AliceBakery</title>
     <style>
-        
+        #sl {
+            padding: 5px;
+            border: 1px solid #9e9e9e;
+            width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -133,7 +138,7 @@
                 <table class="table">
                     <tr>
                         <td colspan="3">
-                            <div style="margin-bottom: 20px; color: var(--black-color);">Vui lòng nhập các thông tin: Họ tên, địa chỉ nhận hàng, thời gian nhận bánh và số điện thoại liên hệ.</div>
+                            <div style="margin-bottom: 20px; color: var(--black-color);">Ghi chú:</div>
                             <textarea name="" id="" cols="90" rows="5"></textarea>
                         </td>
                         <td colspan="2" width="225px">
@@ -142,9 +147,85 @@
                                 <div class="total">0</div>
                                 <span class="product-details__tailPart">₫</span>
                             </div>
-                            <button type="submit" id="DH">Đặt Hàng</button>
-                            <div class="success-btn"></div>
+                            <button type="submit" id="DH" data-bs-toggle="modal" data-bs-target="#modalDH">Đặt Hàng</button>
+                            <div class="success-btn"></div> 
+                            <!-- modal -->
+                            <div class="modal fade" id="modalDH" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="width: 600px;">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-center text-secondary" style="width: 100%; font-weight: 400;">THÔNG TIN ĐƠN HÀNG</h4>
+                                            <div class="close" data-bs-dismiss="modal" style="font-size: 20px; font-weight: 700; color: #9e9e9e;">&times;</div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="#" id="form-1">
+                                                <table>
+                                                    <tr>
+                                                        <td width="150px">Họ và tên</td>
+                                                        <td width="420px">
+                                                            <input type="text" class="form-control" id="fullname">
+                                                            <span class="form-message">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Giới tính</td>
+                                                        <td>
+                                                            <input type="radio" name="radioName" id="radioID" value="Nam" checked> <span class="text-dark" >Nam</span>
+                                                            <input type="radio" name="radioName" id="radioID" value="Nữ"> <span class="text-dark">Nữ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Số điện thoại</td>
+                                                        <td>
+                                                            <input type="text" class="form-control" id="phonenumber">
+                                                            <span class="form-message">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hình thức thanh toán</td>
+                                                        <td>
+                                                            <select name="sl" id="sl">
+                                                                <option value="Thanh toán Online">Thanh toán Online</option>
+                                                                <option value="Thanh toán khi nhận hàng">Thanh toán khi nhận hàng</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Địa chỉ</td>
+                                                        <td>
+                                                            <input type="text" class="form-control" id="address">
+                                                            <span class="form-message">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    
+                                                    <tr>
+                                                        <td colspan="3" style="padding: 0;">
+                                                            <button class="btn text-white mt-3 mb-1 " id="saveInfo" style="width: 100%; background-color: var(--pink-color);">Đặt hàng</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </td>
+                    </tr>
+                </table>
+            </form>
+            <form action="#" id="form-2" style="border-top: 2px solid #9e9e9e;">
+                <h2 class="text-dark text-center p-2" style="font-weight: 400;">THÔNG TIN ĐƠN HÀNG</h2>
+                <table class="table table-striped" id="tableDS">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Số điện thoại</th>
+                        <th>Hình thức thanh toán</th>
+                        <th>Địa chỉ</th>
+                        <th>Trạng Thái Đặt Hàng</th>
                     </tr>
                 </table>
             </form>
@@ -313,19 +394,10 @@
             })
             }
 
-            // xử lí khi đặt hàng
             $('#DH').click(function(e) {
                 e.preventDefault();
-                $('.success-btn').append(`
-                    <div class="success">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>Đặt hàng thành công</p>
-                    </div>
-                `);
-                setTimeout(function() {
-                    $('.success-btn').empty();
-                }, 3800);
             })
+            
         })
     </script>
     

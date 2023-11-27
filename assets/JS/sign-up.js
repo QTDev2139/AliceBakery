@@ -40,8 +40,7 @@ $(document).ready(function() {
     
     function ktPassword() {
         var formInput = $('#password').val().trim();
-        // (?= ...) là một positive lookahead assertion
-        // đảm bảo rằng một phần của chuỗi phải khớp với mẫu bên trong nó
+        // (?= ...) lọc kết quả.
         var rg = /^(?=.*[A-Z])(?=.*\d).{8,}/;
         var formErr = $('#password').closest('.form-group').find('.form-message');
         if (formInput == '') {

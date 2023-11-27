@@ -37,4 +37,83 @@ $(document).ready(function() {
         
     })
 
+    function ktFullName() {
+        let fullname = $('#fullname').val().trim();
+        let regex = /^[A-Z]{1}[a-z]+( [A-Z]{1}[a-z]+)+$/;
+        let formErr = $('#fullname').closest('td').find('.form-message');
+        if(fullname == "") {
+            formErr.html('Họ tên không được để trống');
+            formErr.focus();
+            return false;
+        } else if (regex.test(fullname)) {
+            formErr.html('*');
+            return true;
+        } else {
+            formErr.html('Họ tên phải từ 2 từ và mổi ký tự đầu phải viết hoa');
+            formErr.focus();
+            return false;
+        }
+    
+    }
+    $('#fullname').blur(function () {
+        ktFullName();
+    })
+    
+    function ktSDT() {
+        let number = $('#phonenumber').val().trim();
+        let regex = /^0[3-9]\d{8}$/;
+        let formErr = $('#phonenumber').closest('td').find('.form-message');
+        if(number == "") {
+            formErr.html('Số điện thoại không được để trống');
+            formErr.focus();
+            return false;
+        } else if (regex.test(number)) {
+            formErr.html('*');
+            return true;
+        } else {
+            formErr.html('Số điện thoại phải bắt đầu là 0[3-9] và đủ 10 kí tự')
+            formErr.focus()
+            return false;
+        }
+    }
+    $('#phonenumber').blur(function() {
+        ktSDT();
+    })
+    
+    function ktAddres() {
+        let address = $('#address').val().trim();
+        let formErr = $('#address').closest('td').find('.form-message');
+        if(address == "") {
+            formErr.html('Địa chỉ không được để trống');
+            formErr.focus();
+            return false;
+        } else  {
+            formErr.html('*');
+            return true;
+        }
+    }
+    $('#address').blur(function() {
+        ktAddres();
+    })
+ 
+    
+    let count = 0;
+    $('#saveInfo').click(function(e) {
+        e.preventDefault();
+        if(ktFullName() && ktSDT() && ktAddres()) {
+            let name = $('#fullname').val();
+            let sex = $("input[name='radioName']:checked").val();
+            let sdt = $("#phonenumber").val();
+            let httt = $('#sl').val();
+            let address = $("#address").val();
+            $('#tableDS').append("<tr><td>" + count + "</td><td>" + name + "</td><td>" + sex + "</td><td>"
+                                + sdt + "</td><td>" + httt + "</td><td>" + address + "</td><td>"+ "Đang chờ duyệt" + "</td></tr>");
+            $('#modalDH').modal('hide');
+            count++;
+        } else {
+            alert("Khong hop le");
+        } 
+    
+    })
+
 })
